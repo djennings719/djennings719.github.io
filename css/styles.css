@@ -2,6 +2,8 @@ body{
 	font-family: 'Lato', sans-serif;
 	color: #747704;
 	font-weight: 300;
+    background-color: bisque;
+    
 }
 
 .text-muted{
@@ -20,6 +22,6 @@ body{
 }
 
 .picture-thumb-size {
-	max-width: 200px;
-	max-height: 200px;
+    width: 350px;
+	height: 300px;
 }
