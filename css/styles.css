@@ -1,13 +1,31 @@
 body{
 	font-family: 'Lato', sans-serif;
-	color: #747704;
+	color: #02b3e4;
 	font-weight: 300;
-    background-color: bisque;
+    background-color: #2d3c49;
     
 }
 
+* {
+    box-sizing: border-box;
+}
+
+hr{
+    color: #02b3e4;
+}
+
+.color-blue{
+    color: #02b3e4;
+}
+.color-dark-blue{
+    color: #2d3c49;
+}
+.color-gray{
+    color: #7d97ad;
+}
+
 .text-muted{
-	color: #BCBBBB;
+	color: color-gray;
 }
 .text-thin{
 	font-weight: 100;
