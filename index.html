@@ -8,80 +8,70 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="js/jquery-3.2.1.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<!--Title Row-->
-			<header class="col-md-12 text-right text-uppercase">				
-                <h1 class="title-super text-thin">Daniel Jennings</h1>
-				<h4>VR Experience Developer</h4>
-			</header>
+			<header class="row col-md-12 text-right">                
+                <h1 class="title-super text-thin text-uppercase">Daniel Jennings</h1>
+				<h4 class="text-uppercase">Unity Developer <i class="material-icons">cloud</i></h4>
+                <h4 >CrossFit Level 1 Trainer <i class="material-icons">cloud</i></h4>			    
+            </header>            
+            
 			<!-- horizontal rule -->
-			<div class="row">
-				<div class="col-md-12">
-					<hr>
-				</div>				
-			</div>
+            <hr class="row col-md-12">
 
 			<!-- featured work-->
-			<article class="row">
-				<div class="col-md-12">
-                    <h2 class="text-muted">Virtual Reality</h2>
-				</div>
-			
+			<div class="row col-md-12">
+				<h2 class="text-muted">Virtual Reality</h2>
+							
                 <!-- work pieces -->
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <article class="col-md-4 app-article">
                         <img class="picture-thumb-size" src="images/ShootHoop.jpg" alt="Shoot Hoop" data-toggle="modal" data-target="#ShootHoop">
                         <h3 class="text-uppercase">Shoot Hoop</h3>
                         <h4 class="text-uppercase">VR for Android</h4>
                         <h4 ><a class="color-blue" href="https://github.com/djennings719/ShootHoop_Cardboard.git">GitHub</a></h4>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <img class="picture-thumb-size" src="images/TheMaze.jpg" alt="The Maze" data-toggle="modal" data-target="#TheMaze">
-                            <h3 class="text-uppercase">The Maze</h3>
-                            <h4 class="text-uppercase">VR for Android</h4>
-                            <h4><a class="color-blue" href="https://github.com/djennings719/TheMaze.git">The Maze on GitHub</a></h4>
-                        </div>
-                    </div>				
+                    </article>
+                    <article class="col-md-4 app-article">
+                        <img class="picture-thumb-size" src="images/TheMaze.jpg" alt="The Maze" data-toggle="modal" data-target="#TheMaze">
+                        <h3 class="text-uppercase">The Maze</h3>
+                        <h4 class="text-uppercase">VR for Android</h4>
+                        <h4><a class="color-blue" href="https://github.com/djennings719/TheMaze.git">The Maze on GitHub</a></h4>
+                    </article>
                 </div>
-            </article>
-            <div class="row">
-				<div class="col-md-12">
-					<h2 class="text-muted">WebGL</h2>
-				</div>
-			</div>
-            <div class="row text-center">
-                <div class="col-md-4">
+            </div>
+
+            <div class="row col-md-12 ">
+                <h2 class="text-muted">WebGL</h2>
+                <article class="col-md-4 app-article text-center">
                         <img class="picture-thumb-size" src="images/GalaxyShooter.jpg" alt="Galaxy Shooter" data-toggle="modal" data-target="#GalaxyShooter">
                         <h3 class="text-uppercase">Galaxy Shooter</h3>
                         <h4 class="text-uppercase">WebGL</h4>
                         <h4><a class="color-blue" href="https://djennings719.github.io/GalaxyShooter/index.html">Play Galaxy Shooter</a></h4>
-                </div>
-                <div class="col-md-4">
+                </article>
+                <article class="col-md-4 app-article text-center">
                         <img class="picture-thumb-size" src="images/sci-fi-demo.jpg" alt="Sci-Fi Demo" data-toggle="modal" data-target="#SciFiDemo">
                         <h3 class="text-uppercase">Sci-Fi Demo</h3>
                         <h4 class="text-uppercase">WebGL</h4>
                         <h4><a class="color-blue" href="https://djennings719.github.io/Sci_Fi_Demo/index.html">Play Sci-Fi Demo</a></h4>
-                </div>
+                </article>
             </div>
-            <div class="row">
-				<div class="col-md-12">
-					<h2 class="text-muted">Video - Cinemachine</h2>
-				</div>
-			</div>
-            <div class="row text-center">
-                <div class="col-md-4">
+
+            <div class="row col-md-12">
+                <h2 class="text-muted">Video - Cinemachine</h2>
+                <article class="col-md-4 app-article text-center">
                         <img class="picture-thumb-size" src="images/TheGreatFleeceIntro.jpg" alt="The Great Fleece" data-toggle="modal" data-target="#TheGreatFleece">
                         <h3 class="text-uppercase">The Great Fleece</h3>
                         <h4 class="text-uppercase">Desktop</h4>
                         <h4><a class="color-blue" href="https://www.youtube.com/watch?v=YUFoeInG5BM">Watch Intro Scene</a></h4>
-                </div>
-            </div>
-		</div>
+                </article>
+            </div>   
+        </div>        
+        
 		<!-- Modals -->
         <!-- Shoot Hoop Modal -->
 	    <div class="modal fade" id="ShootHoop" tabindex="-1" role="dialog" aria-labelledby="shootHoopLabel" aria-hidden="true">
@@ -129,7 +119,7 @@
 	                </div>
 	                <div class="modal-body">
 	                    <img class="img-responsive" src="images/GalaxyShooter.jpg" alt="Galaxy Shooter">
-	                    <p>This app is one of the projects for <i>The Ultimate Guide to Game Development</i> from Udemy.
+	                    <p>This app is one of the projects for <i>The Ultimate Guide to Game Development</i> from Udemy.  It is a 2D game which involves destroying aliens and collecting power-ups.
 	                    </p>
 	                </div>
 	                <div class="modal-footer">
@@ -147,7 +137,7 @@
 	                </div>
 	                <div class="modal-body">
 	                    <img class="img-responsive" src="images/sci-fi-demo.jpg" alt="Sci-Fi Demo">
-	                    <p>This app is one of the projects for <i>The Ultimate Guide to Game Development</i> from Udemy.
+	                    <p>This app is one of the projects for <i>The Ultimate Guide to Game Development</i> from Udemy.  It is a 3D game which involves an inventory and item collection system.  There are interactions with collectible items and characters to trade items with.
 	                    </p>
 	                </div>
 	                <div class="modal-footer">
@@ -165,7 +155,7 @@
 	                </div>
 	                <div class="modal-body">
 	                    <img class="img-responsive" src="images/TheGreatFleeceIntro.jpg" alt="The Great Fleece">
-	                    <p>This app is one of the projects for <i>The Ultimate Guide to Cinematography with Unity</i> from Udemy.
+	                    <p>This app is one of the projects for <i>The Ultimate Guide to Cinematography with Unity</i> from Udemy.  It is a 3D game which uses Unity Timeline and Cinemachine for the animation clips.  
 	                    </p>
 	                </div>
 	                <div class="modal-footer">
