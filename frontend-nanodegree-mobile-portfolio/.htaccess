@@ -1,0 +1,6 @@
+<Files perfmatters.js, *.css, *.jpg>
+Header append Cache-Control: max-age=600 "public"
+</Files>
+<Files analytics.js >
+Header append Cache-Control "public" max-age=7200
+</Files>
